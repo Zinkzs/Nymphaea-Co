@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<style>
+    .titlem{
+        display: flex;
+        width: 100vw;
+        height: 100vw;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    .mvg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 95%;
+        height: 100%;
+    }
+    .mvgh{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1%;
+        z-index: 2;
+    }
+    .mvt{
+        display: flex;
+        font-size: 100%;
+        width: 50%;
+        font-size: 2.5em;
+        justify-content: center;
+        visibility: 1;
+    }
+    .mvt:hover{
+        color: lightgreen;
+    }
+    .mvta{
+        display: flex;
+        position: absolute;
+        font-size: 100%;
+        width: 50%;
+        font-size: 4em;
+        justify-content: center;
+    }
+    .mvta:hover{
+        color: lightgreen;
+    }
+    .mvtd:nth-child(n+1){
+        display: flex;
+        font-size: 100%;
+        width: 50%;
+        font-size: 0em;
+        justify-content: center;
+        visibility: 0;
+        opacity: 0;
+    }
+    .mvi{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 1%;
+        z-index: 1;
+    }
+    .mvid{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 1%;
+        visibility: 0;
+        opacity: 0;
+    }
+    .mvic:nth-child(n+1){
+        display: flex;
+        font-size: 100%;
+        width: 50%;
+        justify-content: center;
+        padding-top: 25%;
+        padding-bottom: 25%;
+        background-color: antiquewhite;
+        border-radius: 5%;
+    }
+    div.mvic>img{
+        width: 50%;
+        height: 90%;
+    }
+    .mvbt{
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        width: 70%;
+        height: 80%;
+    }
+    .mvbtca{
+        display: flex;
+        position: absolute;
+        font-size: 3em;
+        visibility: 1;
+        opacity: 1;
+    }
+    .mvbtcd:nth-child(n+1){
+        display: flex;
+        position: absolute;
+        font-size: 2em;
+        visibility: 0;
+        opacity: 0;
+    }
+</style>
+<html>
+    <body>
+        <p>dhcdhcoashdcihdiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+    <div class="titlem">
+        <div class="mvg">
+            <div class="mvgh">
+                <div class="mvt" id="mth" onclick="mt()">
+                    MISSION
+                </div>
+                <div class="mvt" id="vth" onclick="vt()">
+                    VISION
+                </div>
+                <div class="mvt" id="oth" onclick="ot()">
+                    OBJECTIVES
+                </div>
+                <div class="mvt" id="pth" onclick="pt()">
+                    PHILOSOPHY
+                </div>
+            </div>
+            <div class="mvi" id="mvid">
+                <div class="mvic" id="mti">
+                    <img src="miss.png">
+                </div>
+                <div class="mvic" id="vti">
+                    <img src="miss.png">
+                </div>
+                <div class="mvic" id="oti">
+                    <img src="miss.png">
+                </div>
+                <div class="mvic" id="pti">
+                    <img src="miss.png">
+                </div>
+            </div>
+            <div class="mvbt">
+                <div class="mvbtcd" id="mtb">
+                    To create and offer sustainable packaging solutions by producing high-quality, eco-
+                    friendly paper bags. Our goal is to provide great experiences with greener practices
+                    while providing exceptional products that meet the needs of a changing world.
+                </div>
+                <div class="mvbtcd" id="vtb">
+                    To create widespread production of water hyacinth paper bags that turns an environmentally
+                    friendly material into a useful product that benefits the environment and the community.
+                </div>
+                <div class="mvbtcd" id="otb">
+                    * To promote eco-friendly practices through our packaging products and services <br>
+
+            * To yield sustainable and high-quality products that promote eco-friendliness<br>
+            
+            * To introduce a greener alternative for packaging products that will cater to the needs of potential partners and customers <br> 
+            
+            * To expand the utilization of eco-friendly goods and ecological practices <br>
+            
+            * To optimize production designs with improved durability and functionality of packaging goods <br>
+                </div>
+                <div class="mvbtcd" id="ptb">
+                    We focus on innovation, without sacrificing nature itself, explore beyond what's 
+                    possible and produce results, and create products not only for the people, but for the nature too.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function mt() {
+            if (document.getElementById('mtb').className=='mvbtcd',
+                document.getElementById('mth').className=='mvt') {
+                document.getElementById('mtb').className='mvbtca';
+                document.getElementById('mth').className='mvta';
+                document.getElementById('vth').className='mvtd';
+                document.getElementById('oth').className='mvtd';
+                document.getElementById('pth').className='mvtd';
+                document.getElementById('mvid').className='mvid';
+                }
+                else {
+                    document.getElementById('mtb').className='mvbtcd';
+                    document.getElementById('mth').className='mvt';
+                    document.getElementById('vth').className='mvt';
+                    document.getElementById('oth').className='mvt';
+                    document.getElementById('pth').className='mvt';
+                    document.getElementById('mvid').className='mvi';
+                }
+            }
+    function vt() {
+            if (document.getElementById('vtb').className=='mvbtcd',
+                document.getElementById('vth').className=='mvt') {
+                document.getElementById('vtb').className='mvbtca';
+                document.getElementById('vth').className='mvta';
+                document.getElementById('mth').className='mvtd';
+                document.getElementById('oth').className='mvtd';
+                document.getElementById('pth').className='mvtd';
+                document.getElementById('mvid').className='mvid';
+                }
+                else {
+                    document.getElementById('vtb').className='mvbtcd';
+                    document.getElementById('mth').className='mvt';
+                    document.getElementById('vth').className='mvt';
+                    document.getElementById('oth').className='mvt';
+                    document.getElementById('pth').className='mvt';
+                    document.getElementById('mvid').className='mvi';
+                }
+            }
+    function ot() {
+            if (document.getElementById('otb').className=='mvbtcd',
+                document.getElementById('oth').className=='mvt') {
+                document.getElementById('otb').className='mvbtca';
+                document.getElementById('oth').className='mvta';
+                document.getElementById('mth').className='mvtd';
+                document.getElementById('vth').className='mvtd';
+                document.getElementById('pth').className='mvtd';
+                document.getElementById('mvid').className='mvid';
+                }
+                else {
+                    document.getElementById('otb').className='mvbtcd';
+                    document.getElementById('mth').className='mvt';
+                    document.getElementById('vth').className='mvt';
+                    document.getElementById('oth').className='mvt';
+                    document.getElementById('pth').className='mvt';
+                    document.getElementById('mvid').className='mvi';
+                }
+            }
+    function pt() {
+            if (document.getElementById('ptb').className=='mvbtcd',
+                document.getElementById('pth').className=='mvt') {
+                document.getElementById('ptb').className='mvbtca';
+                document.getElementById('pth').className='mvta';
+                document.getElementById('mth').className='mvtd';
+                document.getElementById('oth').className='mvtd';
+                document.getElementById('vth').className='mvtd';
+                document.getElementById('mvid').className='mvid';
+                }
+                else {
+                    document.getElementById('ptb').className='mvbtcd';
+                    document.getElementById('mth').className='mvt';
+                    document.getElementById('vth').className='mvt';
+                    document.getElementById('oth').className='mvt';
+                    document.getElementById('pth').className='mvt';
+                    document.getElementById('mvid').className='mvi';
+                }
+            }
+</script>
+</html>
